@@ -72,7 +72,7 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>test feedback</string>
+				<string>exactmatch</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -86,7 +86,7 @@
 				<key>script</key>
 				<string>/usr/bin/ruby ./main.rb {query}</string>
 				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
+				<string>Exact match query on godaddy</string>
 				<key>title</key>
 				<string>Test Alfred Feedback</string>
 				<key>type</key>
