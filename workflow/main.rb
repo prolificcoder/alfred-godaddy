@@ -5,6 +5,7 @@ require "alfred"
 require "net/http"
 require "uri"
 require "json"
+require 'openssl'
 
 KEY = "UzXLycyn_7AJQ3KqhTdJ7fcFoCvoYFn"
 SECRET = "7AJTvDNyecPFeJWhn339Ze"
@@ -25,17 +26,18 @@ Alfred.with_friendly_error do |alfred|
   request.content_type = "application/json"
 
   response = http.request(request)
+  json_response = JSON.parse(response.body)
 
   # add an arbitrary feedback
   fb.add_item({
                   :uid => "" ,
                   :subtitle => "#{query}",
-                  :title => "#{response['available']}" ,
+                  :title => json_response['available'].to_s,
                   :arg => "A test feedback Item" ,
                   :valid => "yes" ,
               })
 
-  puts fb.to_xml(ARGV)
+  puts fb.to_xml
 end
 
 
