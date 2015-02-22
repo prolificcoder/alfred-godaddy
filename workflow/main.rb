@@ -26,16 +26,33 @@ Alfred.with_friendly_error do |alfred|
   request.content_type = "application/json"
 
   response = http.request(request)
-  json_response = JSON.parse(response.body)
 
-  # add an arbitrary feedback
-  fb.add_item({
-                  :uid => "" ,
-                  :subtitle => "#{query}",
-                  :title => json_response['available'].to_s,
-                  :arg => "A test feedback Item" ,
-                  :valid => "yes" ,
-              })
+  alfred.ui.debug response.code
+
+  if response.code.to_i == 200
+    json_response = JSON.parse(response.body)
+    if json_response['available']
+      fb.add_item({
+                      :uid => json_response['domain'],
+                      :subtitle => json_response['domain'],
+                      :title => 'Your domain is available',
+                      :valid => "yes",
+                  })
+    else
+      fb.add_item({
+                      :uid => json_response['domain'],
+                      :subtitle => json_response['domain'],
+                      :title => 'Your domain is not available',
+                      :valid => "no",
+                  })
+    end
+  else
+    fb.add_item({
+                    :subtitle => "exactmatch needs complete domain",
+                    :title => "Enter complete domain",
+                    :valid => "no",
+                })
+  end
 
   puts fb.to_xml
 end
