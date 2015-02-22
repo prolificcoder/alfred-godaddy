@@ -47,7 +47,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Godaddy domains api</string>
+	<string>Godaddy domains</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -58,7 +58,7 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>exactmatch</string>
+				<string>available</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -204,15 +204,15 @@
 		<key>72801B59-2041-4A22-8302-9FBA6F34C0AB</key>
 		<dict>
 			<key>ypos</key>
-			<real>380</real>
+			<real>290</real>
 		</dict>
 		<key>9CD601E5-F548-41E9-832A-FD8CB9FF1D15</key>
 		<dict>
 			<key>ypos</key>
-			<real>260</real>
+			<real>150</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>http://www.mobiletest.engineer/</string>
 </dict>
 </plist>
