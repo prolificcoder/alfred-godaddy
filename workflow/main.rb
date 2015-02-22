@@ -29,11 +29,11 @@ Alfred.with_friendly_error do |alfred|
   # # add a file feedback
   fb.add_file_item(File.expand_path "~/Applications/")
   response = make_api_query(query,'available','domain')
-
   alfred.ui.debug response.code
 
   if response.code.to_i == 200
     json_response = JSON.parse(response.body)
+    alfred.ui.debug json_response
     if json_response['available']
       fb.add_item({
                       :uid => json_response['domain'],

@@ -17,7 +17,7 @@
 				<string></string>
 			</dict>
 		</array>
-		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
+		<key>9CD601E5-F548-41E9-832A-FD8CB9FF1D15</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -88,7 +88,7 @@
 				<key>subtext</key>
 				<string>Exact match query on godaddy</string>
 				<key>title</key>
-				<string>Test Alfred Feedback</string>
+				<string>Domain availability</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -109,7 +109,7 @@
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>keyword</key>
-				<string>test rescue feedback</string>
+				<string>domains</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -119,22 +119,22 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>...</string>
+				<string>working...</string>
 				<key>script</key>
-				<string>/usr/bin/ruby ./main_with_rescue_feedback.rb {query}</string>
+				<string>/usr/bin/ruby ./suggest.rb {query}</string>
 				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
+				<string>Exact match query on godaddy</string>
 				<key>title</key>
-				<string>Test Alfred Rescue Feedback</string>
+				<string>Domain suggestions</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>BA17BE41-176A-4E9A-B958-A3F0BEA36829</string>
+			<string>9CD601E5-F548-41E9-832A-FD8CB9FF1D15</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -153,10 +153,10 @@
 			<key>ypos</key>
 			<real>140</real>
 		</dict>
-		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
+		<key>9CD601E5-F548-41E9-832A-FD8CB9FF1D15</key>
 		<dict>
 			<key>ypos</key>
-			<real>370</real>
+			<real>430</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
