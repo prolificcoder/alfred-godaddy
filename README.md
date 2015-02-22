@@ -9,6 +9,11 @@ Doesn't require api keys, username or password.
 ## Todo
 * Go the purchase page for the selection item
 
+## Ambitious todo
+
+* Set the secret key, shopper id and token from app
+* This will enable other API calls
+
 ## Credits
 
 * [alfred2-ruby-framework]( https://github.com/canadaduane/alfred2-ruby-framework )
